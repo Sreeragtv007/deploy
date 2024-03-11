@@ -293,6 +293,7 @@ def userProfile(request):
 
 
 def downloadInvoice(request, pk):
+    print(pk)
     obj = Buyproduct.objects.get(product_id=pk)
     file_path = os.path.join(settings.MEDIA_ROOT, obj.file.path)
     if os.path.exists(file_path):

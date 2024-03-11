@@ -13,8 +13,45 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  box-shadow: inset;
+  border-radius: 20px;
+  height: fit-content;
+  background: rgb(203, 179, 214);
+  background: radial-gradient(circle, rgba(203, 179, 214, 1) 19%, rgba(148, 187, 233, 1) 100%);
+  padding: 20px;
+  margin: 20px;
+}
+img{
+  height: 180px;
+  width: 100px;
   
+}
+.cancel-button{
+  background-color: aliceblue;
+  border-radius: 10px;
+  height: fit-content;
+  margin: 5px;
+  text-shadow: 5px;
+  color: black;
+}
+.card-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.byn{
+  color: black;
+}</style>  
  
    
   </head>
@@ -140,7 +177,7 @@
     
     <div class=" card col-sm-6 col-lg-3">
       <a href="{% url 'productdetails' i.id %}"><div class=""><div>
-        <img src="{{i.image.url}}" class="card-img-top mt-4" alt="..." style="height: 150px; width: 200px;">
+        <img src="{{i.image.url}}" class="card-img-top mt-4" alt="..." style="height: 120px; width: 170px;">
         <div class="card-body">
           <h5 class="card-text" style="width: auto;">{{i.name}}</h5>
           <h5 class="card-text">price:  {{i.price}}</h5>
