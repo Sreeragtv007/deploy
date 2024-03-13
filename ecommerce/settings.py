@@ -134,7 +134,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "static"
     
 ]
-MEDIA_DIR =' home/ubuntu/deploy'
+MEDIA_DIR =' /home/ubuntu/deploy'
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
